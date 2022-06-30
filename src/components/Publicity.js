@@ -3,10 +3,9 @@ import '../App.css';
 const Publicity = () => {
   return (
     <div className="containerBottom">
-      <h1>
-        <strong>Bloomberg </strong>
-        <span>Linea</span>
-      </h1>
+      <h2>
+        <strong>Publicidad</strong>
+      </h2>
     </div>
   );
 };

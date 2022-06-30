@@ -1,3 +1,16 @@
+.titleApp {
+  height: auto;
+  background-color: #FFFFFF;
+}
+.titleApp h1 {
+  margin: auto;
+  color: #000000;
+  padding: 10px;
+}
+.titleApp span {
+  color: #04B404;
+}
+
 /*------ Container main ------*/
 .containerMain {
   margin-top: 5px;
@@ -5,6 +18,7 @@
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
+  padding: 10px 150px 10px 150px;
 }
 
 /*------ Container Top ------*/
@@ -29,7 +43,7 @@
 }
 .containerimgSmall {
   width: 100%;
-  height: 60%;
+  height: 70%;
   background-color: #FFFFFF;
 }
 .containerimgSmall img {
@@ -38,7 +52,7 @@
 }
 .containerTitle {
   width: 100%;
-  height: 40%;
+  height: 30%;
   background-color: #FFFFFF;
   font-size: 12px;
   text-align: left;
@@ -49,6 +63,7 @@
 }
 .containerTitle span {
   color: #04B404;
+  font-size: 16px;
 }
 
 .containerlrBottom {
@@ -68,7 +83,7 @@
 }
 .containerimgCenter {
   width: 100%;
-  height: 60%;
+  height: 70%;
   background-color: #FFFFFF;
 }
 .containerimgCenter img { 
@@ -78,7 +93,7 @@
 .containertitleCenter {
   margin-bottom: 15px;
   width: 100%;
-  height: 40%;
+  height: 30%;
   background-color: #FFFFFF;
   font-size: 20px;
   text-align: left;
@@ -86,6 +101,7 @@
 .containertitleCenter h2 {
   margin-top: 20px;
   color: #000000;
+  font-size: 20px;
 }
 .containertitleCenter span {
   color: #04B404;
@@ -106,12 +122,13 @@
 
 /*------ Container bottom ------*/
 .containerBottom {
-  height: 100px;
-  background-color: #FFFFFF;
+  height: auto;
+  background-color: #E6E6E6;
 }
 .containerBottom h2 {
-  margin-top: 20px;
+  margin: auto;
   color: #000000;
+  padding: 20px;
 }
 .containerBottom span {
   color: #04B404;
@@ -126,6 +143,11 @@
   /*------ Container main ------*/
   .containerMain {
       height: auto;
+      padding: 5px;
+  }
+  .titleApp h1 {
+    font-size: 20px;
+    padding: 5px;
   }
   /*------ Container Top ------*/
   .containerTop {
@@ -145,6 +167,10 @@
   .containerTitle h2 {
       font-size: 20px;
   }
+  .containerTitle span {
+    color: #04B404;
+    font-size: 16px;
+  }
 
   .containertopCenter {
       height: 45%;
@@ -154,6 +180,9 @@
   }
   .containertitleCenter h2 {
       font-size: 20px;
+  }
+  .containertitleCenter span {
+    font-size: 16px;
   }
   
   .containertopRight {
@@ -165,18 +194,43 @@
   /*------ Container bottom ------*/
   .containerBottom {
       width: 50%;
+      height: auto;
       margin: auto;
       margin-bottom: 20px;
   }
-  .containerBottom {
-      color: #04B404;
-  }
-  .containerBottom h1 {
+  .containerBottom h2 {
       font-size: 20px;
-      text-align: left;
+      text-align: center;
+      margin: auto;
+      padding: 10px;
   }
   .containerBottom span {
       font-size: 20px;
       color: #0B610B;
   }  
+}
+
+/*****************************************************/
+/* Medias query */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  html {
+    width: auto;
+  }
+  /*------ Container main ------*/
+  .containerMain {
+      height: auto;
+      padding: 5px;
+  }
+  .titleApp h1 {
+    font-size: 20px;
+    padding: 5px;
+  }
+  /*------ Container bottom ------*/
+  .containerBottom {
+    height: auto;
+    margin-top: 15px;
+  }
+  .containerBottom h2 {
+    padding: 15px;
+  }
 }
